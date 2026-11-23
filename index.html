@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Raksha &amp; Srihari | Wedding Invitation</title>
+<meta name="description" content="You are warmly invited to the wedding of Raksha and Srihari, Sunday 29 November 2026, Sardar Patel Bhavan, Bangalore.">
+<meta name="theme-color" content="#0c4a3e">
+<link rel="icon" type="image/png" sizes="32x32" href="icon-32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="icon-192.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<meta property="og:title" content="Raksha &amp; Srihari | Wedding Invitation">
+<meta property="og:description" content="You are warmly invited. Sunday, 29th November 2026, Sardar Patel Bhavan, Bangalore.">
+<link rel="preload" as="image" href="photos/palace-900.jpg" imagesrcset="photos/palace-900.jpg 900w, photos/palace.jpg 1717w" imagesizes="(min-width:700px) 420px, 78vw" fetchpriority="high">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Lora:ital,wght@0,400;0,500;0,600;1,400&family=Pinyon+Script&display=swap" rel="stylesheet">
+<style>
+  :root {
+    color-scheme: light dark;
+    --emerald: #0f5a4a;
+    --emerald-deep: #072e27;
+    --gold: #d9a93f;
+    --gold-soft: #f6d98a;
+    --kumkum: #a3191f;
+    --paper: #fff9ec;
+    --sand: #f4e7c8;
+    --paper-text: #2b2418;
+    --card: #fffdf6;
+    --head: #0b4a3c;
+    --accent: #a3191f;
+    --display: "Cinzel", Georgia, serif;
+    --body: "Lora", Georgia, serif;
+    --script: "Pinyon Script", "Snell Roundhand", cursive;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --paper: #0b1c17; --sand: #0f2620; --paper-text: #f0e7cf; --card: #132f27; --head: #f6d98a; --accent: #ff9a8f; }
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; scroll-padding-top: 64px; }
+  body { font-family: var(--body); font-size: 1.04rem; background: var(--paper); color: var(--paper-text); line-height: 1.65; overflow-x: hidden; }
+  a { color: inherit; }
+  img { display: block; max-width: 100%; height: auto; }
+  picture { display: contents; }
+  :focus-visible { outline: 3px solid var(--gold); outline-offset: 3px; }
+
+  /* ---------- Opening: temple doors that swing open together ---------- */
+  .doors { position: fixed; inset: 0; z-index: 100; display: flex; perspective: 1500px; overflow: hidden; animation: doors-gone 0s 1.05s forwards; }
+  .door { flex: 1; position: relative; background: linear-gradient(90deg, #083a2f, #0f5a4a 48%, #083a2f); backface-visibility: hidden; }
+  .door::before { content: ""; position: absolute; inset: 18px 14px; border: 2px solid rgba(232,197,110,.6); border-radius: 6px; }
+  .door::after { content: ""; position: absolute; inset: 42px 38px; border: 1px solid rgba(232,197,110,.4); border-radius: 4px; background: radial-gradient(circle, #e8c56e 1.7px, transparent 2.2px) 0 0 / 34px 34px; opacity: .55; }
+  .door.dl { transform-origin: left center; box-shadow: inset -7px 0 0 #e1b24a; animation: swing-l .95s cubic-bezier(.6,0,.25,1) forwards; }
+  .door.dr { transform-origin: right center; box-shadow: inset 7px 0 0 #e1b24a; animation: swing-r .95s cubic-bezier(.6,0,.25,1) forwards; }
+  @keyframes swing-l { to { transform: rotateY(-112deg); } }
+  @keyframes swing-r { to { transform: rotateY(112deg); } }
+  @keyframes doors-gone { to { visibility: hidden; } }
+  .gate-wrap { position: absolute; inset: 0; z-index: 2; display: flex; align-items: center; justify-content: center; padding: 20px; animation: fade-out .25s forwards; }
+  @keyframes fade-out { to { opacity: 0; } }
+  .gate { position: relative; margin-top: 78px; width: min(86vw, 320px); display: flex; flex-direction: column; align-items: center; text-align: center; padding: 36px 22px 32px; background: #fff9ec; border: 2px solid var(--gold); border-radius: 160px 160px 18px 18px; box-shadow: 0 0 0 6px #fff9ec, 0 0 0 8px var(--gold), 0 26px 60px rgba(0,0,0,.55); }
+  .gate-badge { width: 140px; height: 140px; margin: -112px 0 14px; border-radius: 50%; background: #fff9ec; border: 2px solid var(--gold); box-shadow: 0 0 0 6px #fff9ec, 0 0 0 7.5px var(--gold), 0 12px 28px rgba(0,0,0,.4); display: grid; place-items: center; overflow: hidden; }
+  .gate-badge img { width: 94%; height: auto; }
+  @media (max-height: 560px) { .gate-badge { display: none; } .gate { margin-top: 0; border-radius: 22px; } }
+  .gate-name { font-family: var(--display); font-weight: 700; font-size: 1.5rem; letter-spacing: .1em; line-height: 1.2; color: #0b4a3c; text-transform: uppercase; }
+  .gate-sub { font-family: var(--script); font-size: 2.2rem; line-height: 1.1; color: #a3191f; margin: 2px 0 20px; }
+  .gate button { display: none; cursor: pointer; font-family: var(--display); font-weight: 600; letter-spacing: .12em; text-transform: uppercase; padding: 14px 26px; border-radius: 4px; border: 2px solid var(--gold); background: #a3191f; color: #fff9ec; font-size: .85rem; }
+  .gate button:hover { background: #8a1217; }
+  .js .gate button { display: inline-block; }
+  .js .doors, .js .door, .js .gate-wrap, .js .rise { animation-play-state: paused; }
+  .js.opened .doors, .js.opened .door, .js.opened .gate-wrap, .js.opened .rise { animation-play-state: running; }
+  .js.opened .doors { pointer-events: none; }
+  html.js:not(.opened), html.js:not(.opened) body { overflow: hidden; }
+
+  /* ---------- Nav ---------- */
+  nav { position: fixed; top: 0; left: 0; right: 0; z-index: 50; padding: calc(10px + env(safe-area-inset-top, 0px)) 8px 10px; display: flex; justify-content: center; gap: 2px; background: color-mix(in srgb, var(--emerald-deep) 88%, transparent); backdrop-filter: blur(10px); border-bottom: 2px solid var(--gold); }
+  nav a { color: #f6e9c8; text-decoration: none; font-family: var(--display); font-size: .74rem; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; padding: 7px 11px; border-radius: 3px; }
+  nav a:hover { background: rgba(246,217,138,.18); }
+
+  /* ---------- Hero: emerald temple wall, toranam, arched photo ---------- */
+  .hero { position: relative; overflow: hidden; text-align: center; color: #f7ecd0; padding: 100px 20px 64px; background: radial-gradient(circle at 50% 22%, #1c7a63 0%, #0c4a3e 52%, #072e27 100%); }
+  .hero::before { content: ""; position: absolute; inset: 0; background: radial-gradient(rgba(246,217,138,.16) 1.3px, transparent 1.8px) 0 0 / 30px 30px; pointer-events: none; }
+  .toranam { position: absolute; top: 56px; left: 0; right: 0; height: 62px; z-index: 2; pointer-events: none; background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='64' height='60' viewBox='0 0 64 60'><path d='M0 4H64' stroke='%23f2b233' stroke-width='3'/><path d='M32 6C20 18 22 44 32 56C42 44 44 18 32 6Z' fill='%232f8f5b'/><path d='M32 10V52' stroke='%23a9dcb4' stroke-width='1.2'/><circle cx='0' cy='9' r='5.5' fill='%23f28c1e'/><circle cx='64' cy='9' r='5.5' fill='%23f28c1e'/></svg>") repeat-x center top / 64px 60px; }
+  .petals { position: absolute; inset: 0; pointer-events: none; z-index: 3; }
+  .petals span { position: absolute; top: -30px; border-radius: 80% 0 80% 0; opacity: .9; animation: fall linear infinite; }
+  @keyframes fall { to { transform: translateY(115vh) rotate(540deg) translateX(40px); } }
+  .hero > *:not(.toranam):not(.petals) { position: relative; z-index: 2; }
+  .rise { opacity: 0; transform: translateY(26px); animation: rise .7s cubic-bezier(.2,.7,.2,1) forwards; }
+  @keyframes rise { to { opacity: 1; transform: none; } }
+  .d1 { animation-delay: .25s; } .d2 { animation-delay: .35s; } .d3 { animation-delay: .45s; }
+  .d4 { animation-delay: .55s; } .d5 { animation-delay: .65s; } .d6 { animation-delay: .75s; }
+  .bless { margin-top: 40px; font-family: var(--display); font-weight: 600; font-size: .86rem; letter-spacing: .16em; text-transform: uppercase; color: var(--gold-soft); }
+  .hero-arch { width: min(78vw, 420px); aspect-ratio: 3 / 4; margin: 22px auto 0; border-radius: 999px 999px 10px 10px; overflow: hidden; border: 4px solid var(--gold); box-shadow: 0 0 0 7px rgba(7,46,39,.9), 0 0 0 9px var(--gold), 0 30px 60px -20px rgba(0,0,0,.7); }
+  .hero-arch img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 30%; animation: kb 26s ease-in-out infinite alternate; transform-origin: 50% 35%; }
+  @keyframes kb { to { transform: scale(1.07); } }
+  .kicker { margin-top: 34px; font-family: var(--display); font-size: .78rem; letter-spacing: .34em; text-transform: uppercase; color: var(--gold-soft); }
+  .names { font-family: var(--script); font-weight: 400; font-size: clamp(3.6rem, 16vw, 6rem); line-height: 1.05; color: #fff4d6; text-shadow: 0 3px 24px rgba(0,0,0,.45); }
+  .names .weds { display: block; font-family: var(--display); font-size: .2em; letter-spacing: .4em; text-transform: uppercase; color: var(--gold-soft); margin: 4px 0; padding-left: .4em; }
+  @media (min-width: 720px) { .names .weds { display: inline; margin: 0 .8em; vertical-align: .9em; } }
+  .ribbon { display: inline-block; margin-top: 16px; padding: 9px 34px; background: var(--gold); color: #3a2300; font-family: var(--display); font-weight: 700; font-size: .95rem; letter-spacing: .14em; text-transform: uppercase; clip-path: polygon(0 0, 100% 0, 96% 50%, 100% 100%, 0 100%, 4% 50%); }
+  @media (max-width: 460px) { .ribbon { font-size: .74rem; letter-spacing: .07em; padding: 9px 26px; white-space: nowrap; } }
+  .where { margin-top: 12px; font-style: italic; opacity: .92; }
+  .countdown { display: flex; justify-content: center; gap: 12px; margin-top: 24px; }
+  .countdown div { width: 74px; height: 74px; border-radius: 50%; border: 1.5px solid var(--gold); background: rgba(7,46,39,.55); display: flex; flex-direction: column; align-items: center; justify-content: center; }
+  .countdown b { font-family: var(--display); font-weight: 700; font-size: 1.45rem; line-height: 1; color: var(--gold-soft); font-variant-numeric: tabular-nums; }
+  .countdown span { font-size: .6rem; letter-spacing: .14em; text-transform: uppercase; opacity: .85; margin-top: 3px; }
+  .count-note { font-size: .84rem; opacity: .8; margin-top: 12px; font-style: italic; }
+
+  @media (min-width: 900px) {
+    .hero { display: grid; grid-template-columns: minmax(0, 420px) minmax(0, 540px); justify-content: center; align-items: center; column-gap: 72px; padding: 112px 40px 72px; }
+    .hero .bless { grid-column: 1 / -1; margin-top: 30px; }
+    .hero .hero-arch { margin: 12px 0 0; width: 100%; }
+    .hero .kicker { margin-top: 0; }
+    .hero-text { padding-top: 12px; }
+    .names { font-size: clamp(4rem, 6vw, 5.6rem); }
+  }
+
+  /* ---------- Sections ---------- */
+  section { padding: 80px 18px; }
+  .wrap { max-width: 640px; margin: 0 auto; }
+  .wrap.wide { max-width: 1020px; }
+  .eyebrow { text-align: center; font-family: var(--display); letter-spacing: .3em; text-transform: uppercase; font-size: .74rem; color: var(--accent); font-weight: 600; }
+  h2.title { text-align: center; font-family: var(--display); font-weight: 700; font-size: clamp(1.7rem, 6.4vw, 2.4rem); letter-spacing: .04em; line-height: 1.2; color: var(--head); margin: 8px 0 36px; }
+  h2.title::after { content: ""; display: block; width: 160px; height: 26px; margin: 14px auto 0; background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='26' viewBox='0 0 160 26'><path d='M6 15H58M102 15H154' stroke='%23d9a93f' stroke-width='1.3'/><path d='M64 13C69 23 91 23 96 13Z' fill='%23d9a93f'/><path d='M80 2C76 7 77 10 80 11C83 10 84 7 80 2Z' fill='%23f28c1e'/></svg>") center / contain no-repeat; }
+  .js .reveal { opacity: 0; transform: translateY(30px); transition: opacity .55s ease, transform .55s cubic-bezier(.2,.7,.2,1); }
+  .js .reveal.in { opacity: 1; transform: none; }
+
+  .photo { display: block; width: 100%; border: 0; padding: 0; background: none; cursor: zoom-in; font: inherit; color: inherit; overflow: hidden; position: relative; }
+  .photo img { width: 100%; transition: transform .8s cubic-bezier(.2,.7,.2,1); }
+  .photo:hover img { transform: scale(1.035); }
+
+  /* Grandparents: beaded ovals */
+  #blessings { background: var(--sand); }
+  .gp-grid { display: grid; gap: 34px; grid-template-columns: 1fr; max-width: 400px; margin: 0 auto; }
+  @media (min-width: 720px) { .gp-grid { grid-template-columns: 1fr 1fr; max-width: 760px; gap: 44px; } }
+  .gp { border-radius: 50%; aspect-ratio: 5 / 4; border: 7px dotted var(--gold); box-shadow: 0 0 0 4px var(--sand), 0 0 0 5.5px var(--emerald), 0 22px 40px -22px rgba(0,0,0,.6); background-clip: padding-box; }
+  .gp img { height: 100%; object-fit: cover; object-position: 50% 30%; border-radius: 50%; }
+
+  /* Invitation card: silk-saree border */
+  .frame { --paper-text: #2b2418; --head: #0b4a3c; --accent: #a3191f; color: #2b2418; background: #fffdf6; padding: 56px 18px 54px; text-align: center; box-shadow: 0 0 0 6px #0f5a4a, 0 0 0 9px #d9a93f, 0 0 0 15px #a3191f, 0 0 0 18px #d9a93f, 0 30px 60px -20px rgba(0,0,0,.5); margin: 22px 18px; }
+  .divine { width: min(66%, 250px); aspect-ratio: 1 / 1.12; margin: 0 auto 26px; border-radius: 999px 999px 8px 8px; border: 3px solid var(--gold); box-shadow: 0 0 0 6px #fffdf6, 0 0 0 7.5px var(--gold); background: radial-gradient(circle at 50% 38%, #fffdf8 0%, #f6ecd0 74%); display: flex; align-items: flex-end; justify-content: center; overflow: hidden; padding: 22px 12px 0; }
+  .divine img { width: auto; height: 100%; max-width: 100%; object-fit: contain; object-position: bottom; }
+  .frame .bless { margin-top: 0; color: #a3191f; font-size: .8rem; }
+  .hosts { font-family: var(--display); font-weight: 700; font-size: clamp(1.1rem, 4.6vw, 1.4rem); letter-spacing: .04em; color: #0b4a3c; line-height: 1.3; margin-top: 16px; }
+  .addr { font-size: .94rem; margin-top: 4px; }
+  .solicit { font-style: italic; font-size: 1.12rem; margin: 18px auto 0; max-width: 34ch; }
+  .person { margin-top: 26px; }
+  .titles { font-family: var(--display); font-weight: 600; font-size: .86rem; letter-spacing: .18em; text-transform: uppercase; color: #a3191f; }
+  .pname { font-family: var(--display); font-weight: 700; font-size: clamp(1.7rem, 7.6vw, 2.5rem); letter-spacing: .05em; line-height: 1.2; color: #0b4a3c; white-space: nowrap; margin: 4px 0; text-transform: uppercase; }
+  .pname small { font-size: .42em; letter-spacing: .1em; margin-left: .45em; color: #a3191f; }
+  .edu { font-size: .9rem; letter-spacing: .03em; }
+  .family { margin-top: 6px; }
+  .fig-row { display: flex; align-items: center; justify-content: center; gap: 18px; margin: 26px 0 0; }
+  .fig-row .fig { height: 88px; width: auto; }
+  .fig-row .clasp { width: 108px; height: auto; }
+  .on { font-style: italic; font-size: 1.1rem; margin-top: 28px; }
+  .venue-name { font-family: var(--display); font-weight: 700; font-size: 1.3rem; letter-spacing: .06em; color: #a3191f; line-height: 1.25; text-transform: uppercase; }
+  .seal { display: block; width: 168px; height: auto; margin: 30px auto 0; }
+
+  /* Moonlit section: round "moon" windows */
+  .moon { position: relative; background: radial-gradient(ellipse at 50% 0%, #0f4a3e 0%, #07261f 55%, #031511 100%); color: #f7ecd0; overflow: hidden; }
+  .moon .eyebrow { color: var(--gold-soft); }
+  .moon h2.title { color: #fff4d6; }
+  .stars { position: absolute; inset: 0; pointer-events: none; }
+  .stars i { position: absolute; width: 2px; height: 2px; border-radius: 50%; background: #fff3d0; opacity: .25; animation: twinkle 3.5s ease-in-out infinite; }
+  @keyframes twinkle { 50% { opacity: 1; } }
+  .moon .wrap { position: relative; }
+  .moon-grid { display: grid; gap: 36px; justify-items: center; }
+  .moonshot { width: min(300px, 80vw); aspect-ratio: 1; border-radius: 50%; background: #000; border: 3px solid var(--gold); box-shadow: 0 0 0 9px rgba(217,169,63,.18), 0 0 70px rgba(246,217,138,.25); }
+  .moonshot img { height: 100%; object-fit: cover; }
+  .moonshot.m1 img { object-position: 50% 12%; }
+  .moonshot.m2 img { object-position: 50% 58%; }
+  @media (min-width: 800px) { .moon-grid { grid-template-columns: 1fr 1fr; } }
+
+  /* Programme: timeline with lamp medallions */
+  .functions { background: var(--paper); }
+  .day-wrap { text-align: center; margin: 4px 0 22px; }
+  .day { display: inline-block; padding: 9px 38px; background: var(--emerald); color: var(--gold-soft); font-family: var(--display); font-weight: 600; font-size: .9rem; letter-spacing: .14em; text-transform: uppercase; clip-path: polygon(0 0, 100% 0, 96% 50%, 100% 100%, 0 100%, 4% 50%); }
+  .steps { list-style: none; position: relative; margin-bottom: 34px; }
+  .steps::before { content: ""; position: absolute; left: 50%; top: 10px; bottom: 10px; width: 2px; transform: translateX(-1px); background: repeating-linear-gradient(to bottom, var(--gold) 0 6px, transparent 6px 14px); }
+  .step { position: relative; display: grid; grid-template-columns: 1fr 84px 1fr; align-items: center; margin: 20px 0; }
+  .dot { grid-column: 2; grid-row: 1; justify-self: center; position: relative; z-index: 1; width: 72px; height: 72px; border-radius: 50%; background: var(--emerald); border: 2.5px solid var(--gold); box-shadow: 0 0 0 5px var(--paper), 0 8px 18px -8px rgba(0,0,0,.6); display: grid; place-items: center; }
+  .dot img { width: 46px; height: 46px; object-fit: contain; }
+  .box { grid-row: 1; background: var(--card); border: 1px solid color-mix(in srgb, var(--gold) 70%, transparent); border-radius: 6px; padding: 16px 18px; box-shadow: 0 14px 26px -20px rgba(0,0,0,.6); }
+  .step:nth-child(odd) .box { grid-column: 1; text-align: right; }
+  .step:nth-child(even) .box { grid-column: 3; text-align: left; }
+  .when2 { font-family: var(--display); font-size: .72rem; letter-spacing: .18em; text-transform: uppercase; color: var(--accent); font-weight: 600; }
+  .box h3 { font-family: var(--display); font-weight: 700; font-size: 1.3rem; letter-spacing: .04em; color: var(--head); line-height: 1.2; }
+  .box .time { font-weight: 600; margin-top: 2px; }
+  .box .sub { font-size: .92rem; font-style: italic; opacity: .8; }
+  .cal { display: inline-block; margin-top: 10px; font-family: var(--display); font-size: .7rem; font-weight: 600; letter-spacing: .12em; text-transform: uppercase; text-decoration: none; color: var(--head); border: 1.5px solid var(--gold); padding: 6px 12px; border-radius: 3px; }
+  .cal:hover { background: var(--gold); color: #2a1a00; }
+  @media (max-width: 640px) {
+    .steps::before { left: 36px; }
+    .step { grid-template-columns: 72px 1fr; }
+    .dot { grid-column: 1; width: 64px; height: 64px; }
+    .dot img { width: 40px; height: 40px; }
+    .step:nth-child(odd) .box, .step:nth-child(even) .box { grid-column: 2; text-align: left; margin-left: 8px; }
+  }
+
+  /* Gallery: staggered arches */
+  #moments { background: var(--sand); }
+  .rail { display: flex; align-items: flex-start; gap: 18px; overflow-x: auto; scroll-snap-type: x mandatory; padding: 10px 22px 34px; margin: 0 -18px; scrollbar-width: none; }
+  .rail::-webkit-scrollbar { display: none; }
+  .rail .photo { flex: 0 0 62%; scroll-snap-align: center; border-radius: 999px 999px 14px 14px; border: 3px solid var(--gold); box-shadow: 0 0 0 5px var(--sand), 0 0 0 6.5px var(--emerald), 0 18px 30px -16px rgba(0,0,0,.6); }
+  .rail .photo:nth-child(even) { margin-top: 30px; }
+  .swipe-hint { text-align: center; font-style: italic; font-size: .85rem; opacity: .75; margin-top: 4px; }
+  @media (min-width: 720px) { .rail { display: grid; grid-template-columns: repeat(4, 1fr); align-items: start; gap: 26px; overflow: visible; padding: 10px 10px 40px; margin: 0; } .swipe-hint { display: none; } }
+
+  /* Venue + from */
+  .map { width: 100%; height: 320px; border: 0; border-radius: 6px; box-shadow: 0 0 0 4px var(--paper), 0 0 0 6px var(--gold), 0 24px 44px -26px rgba(0,0,0,.6); }
+  .venue-card { text-align: center; margin-bottom: 30px; }
+  .venue-card .venue-name { font-size: 1.5rem; color: var(--accent); }
+  .btn { display: inline-block; margin-top: 18px; text-decoration: none; padding: 13px 28px; border-radius: 4px; background: var(--kumkum); color: #fff9ec; border: 2px solid var(--gold); cursor: pointer; font-family: var(--display); font-weight: 600; font-size: .8rem; letter-spacing: .14em; text-transform: uppercase; transition: transform .2s; }
+  .btn:hover { transform: translateY(-2px); }
+  .from-sec { background: var(--sand); }
+  .family-photo { border-radius: 6px; border: 3px solid var(--gold); box-shadow: 0 0 0 5px var(--sand), 0 0 0 6.5px var(--emerald), 0 22px 40px -24px rgba(0,0,0,.6); margin: 0 auto 32px; max-width: 540px; }
+  .from-card { text-align: center; padding: 30px 22px; border: 1px solid var(--gold); border-radius: 6px; background: var(--card); box-shadow: 0 16px 30px -22px rgba(0,0,0,.6); }
+  .from-label { font-family: var(--script); color: var(--accent); font-size: 1.9rem; line-height: 1.1; }
+  .from-names { font-family: var(--display); font-weight: 700; font-size: 1.15rem; letter-spacing: .04em; line-height: 1.35; color: var(--head); margin-top: 4px; }
+  .from-card .addr { margin-top: 6px; }
+  .compl { text-align: center; margin-top: 32px; }
+  .compl .from-label { font-size: 1.6rem; }
+  .compl .from-names { font-size: 1.05rem; }
+
+  /* Share + footer */
+  .share { text-align: center; }
+  .share p { max-width: 40ch; margin: 0 auto; font-style: italic; }
+  footer { position: relative; background: linear-gradient(180deg, #0c4a3e, #072e27); color: #f7ecd0; text-align: center; padding: 64px 20px calc(56px + env(safe-area-inset-bottom, 0px)); }
+  footer::before { content: ""; position: absolute; top: 0; left: 0; right: 0; height: 14px; background: repeating-linear-gradient(90deg, #a3191f 0 14px, #d9a93f 14px 20px, #0f5a4a 20px 34px, #d9a93f 34px 40px); }
+  .foot-badge { width: 150px; height: 150px; margin: 0 auto 22px; border-radius: 50%; background: #fff9ec; border: 2px solid var(--gold); box-shadow: 0 0 0 6px #0c4a3e, 0 0 0 7.5px var(--gold); display: grid; place-items: center; overflow: hidden; }
+  .foot-badge img { width: 94%; height: auto; }
+  footer .names-f { font-family: var(--script); font-size: 3.2rem; line-height: 1.1; color: var(--gold-soft); }
+  footer small { display: block; opacity: .8; margin-top: 6px; font-style: italic; }
+
+  /* Music button */
+  .music[hidden] { display: none; }
+  .music { position: fixed; right: 16px; bottom: calc(16px + env(safe-area-inset-bottom, 0px)); z-index: 60; width: 44px; height: 44px; border-radius: 50%; border: 2px solid var(--gold); background: #072e27; color: var(--gold-soft); display: grid; place-items: center; cursor: pointer; opacity: 0; pointer-events: none; transition: opacity .6s, transform .2s; }
+  .opened .music { opacity: .95; pointer-events: auto; }
+  .music:hover { transform: scale(1.06); }
+  .music svg { width: 21px; height: 21px; }
+  .music .slash { display: block; }
+  .music.on .slash { display: none; }
+  .music.on { animation: pulse 2.4s infinite; }
+  @keyframes pulse { 0% { box-shadow: 0 0 0 0 rgba(217,169,63,.55); } 70% { box-shadow: 0 0 0 12px rgba(217,169,63,0); } 100% { box-shadow: 0 0 0 0 rgba(217,169,63,0); } }
+
+  /* Lightbox */
+  .lb { position: fixed; inset: 0; z-index: 200; background: rgba(2,10,8,.985); display: flex; align-items: center; justify-content: center; }
+  .lb[hidden] { display: none; }
+  .lb-stage { width: 100%; height: 100%; display: grid; place-items: center; padding: 56px 12px; }
+  .lb img { max-width: 100%; max-height: 100%; width: auto; height: auto; object-fit: contain; border-radius: 4px; }
+  .lb button { position: absolute; border: 0; cursor: pointer; background: rgba(255,255,255,.12); color: #fff; width: 44px; height: 44px; border-radius: 50%; font-size: 1.4rem; line-height: 1; display: grid; place-items: center; }
+  .lb button:hover { background: rgba(255,255,255,.24); }
+  .lb-close { top: calc(10px + env(safe-area-inset-top, 0px)); right: 12px; }
+  .lb-prev { left: 10px; top: 50%; translate: 0 -50%; }
+  .lb-next { right: 10px; top: 50%; translate: 0 -50%; }
+  .lb-count { position: absolute; bottom: calc(16px + env(safe-area-inset-bottom, 0px)); left: 0; right: 0; text-align: center; color: #d8d2c4; font-size: .85rem; }
+
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    .doors, .petals { display: none; }
+    .hero-arch img, .music.on, .stars i { animation: none; }
+    .rise { animation: none; opacity: 1; transform: none; }
+    .js .reveal { opacity: 1; transform: none; transition: none; }
+    .photo img, .photo:hover img { transition: none; transform: none; }
+  }
+</style>
+</head>
+<body>
+<script>document.documentElement.classList.add("js");</script>
+
+<div class="doors">
+  <div class="door dl"></div><div class="door dr"></div>
+  <div class="gate-wrap">
+    <div class="gate">
+      <div class="gate-badge"><picture><source srcset="art/monogram-sm.webp" type="image/webp"><img src="art/monogram-sm.png" width="480" height="480" alt="Monogram of S and R: United by Love" fetchpriority="high"></picture></div>
+      <p class="gate-name">Nandhi Family</p>
+      <p class="gate-sub">Invitation</p>
+      <button type="button" id="open">Open invitation</button>
+    </div>
+  </div>
+</div>
+
+<nav aria-label="Sections">
+  <a href="#top">Home</a>
+  <a href="#invitation">Invitation</a>
+  <a href="#functions">Programme</a>
+  <a href="#venue">Venue</a>
+</nav>
+
+<header class="hero" id="top">
+  <div class="toranam" aria-hidden="true"></div>
+  <div class="petals" id="petals" aria-hidden="true"></div>
+  <p class="bless rise d1">|| Sri Anjaneya Swamy Prasanna ||</p>
+  <div class="hero-arch rise d2">
+    <img src="photos/palace-900.jpg" srcset="photos/palace-900.jpg 900w, photos/palace.jpg 1717w" sizes="(min-width:700px) 420px, 78vw" width="1717" height="2576" alt="The couple standing close together in front of a glowing golden palace archway at night" fetchpriority="high">
+  </div>
+  <div class="hero-text">
+    <p class="kicker rise d3">The wedding of</p>
+    <h1 class="names rise d3">Raksha<span class="weds">weds</span>Srihari</h1>
+    <p class="ribbon rise d4">Sunday, 29th November 2026</p>
+    <p class="where rise d4">Sardar Patel Bhavan, Vasanthanagar, Bangalore</p>
+    <div class="countdown rise d5" aria-label="Time until the Muhurtham">
+      <div><b id="d">--</b><span>days</span></div>
+      <div><b id="h">--</b><span>hours</span></div>
+      <div><b id="m">--</b><span>mins</span></div>
+      <div><b id="s">--</b><span>secs</span></div>
+    </div>
+    <p class="count-note rise d6">until the Muhurtham</p>
+  </div>
+</header>
+
+<section id="blessings">
+  <div class="wrap wide">
+    <p class="eyebrow reveal">With the blessings of</p>
+    <h2 class="title reveal">Our grandparents</h2>
+    <div class="gp-grid">
+      <button type="button" class="photo gp reveal" data-lb data-alt="An elderly couple posing together against a soft pink and blue sky: a woman in a red saree with a bindi, and a man in a light green shirt" aria-label="Open photo full screen">
+        <img src="photos/grandparents-1.jpg" width="1080" height="746" loading="lazy" decoding="async" alt="An elderly couple posing together against a soft pink and blue sky: a woman in a red saree with a bindi, and a man in a light green shirt">
+      </button>
+      <button type="button" class="photo gp reveal" data-lb data-alt="An elderly couple in front of a soft pink and blue sky: a woman in a red saree with a bindi, and a man in a blue suit with a patterned tie" aria-label="Open photo full screen">
+        <img src="photos/grandparents-2.jpg" width="1139" height="724" loading="lazy" decoding="async" alt="An elderly couple in front of a soft pink and blue sky: a woman in a red saree with a bindi, and a man in a blue suit with a patterned tie">
+      </button>
+    </div>
+  </div>
+</section>
+
+<section id="invitation">
+  <div class="wrap">
+    <p class="eyebrow reveal">Invitation</p>
+    <h2 class="title reveal">With the blessings of our elders</h2>
+
+    <div class="frame reveal">
+      <div class="divine"><picture><source srcset="art/vishnu-lakshmi.webp" type="image/webp"><img src="art/vishnu-lakshmi.png" width="375" height="431" alt="Illustration of Lord Vishnu and Goddess Lakshmi seated together" loading="lazy" decoding="async"></picture></div>
+
+      <p class="bless">|| Sri Anjaneya Swamy Prasanna ||</p>
+      <p class="hosts">Smt. Lakshmi Bai &amp; Sri. N&nbsp;Kupendra Guptha</p>
+      <p class="solicit">Solicit your gracious presence with family and friends on the occasion of the marriage of our grand daughter</p>
+
+      <div class="person">
+        <p class="titles">Chi. Sow.</p>
+        <p class="pname">Raksha N<small>CA.,</small></p>
+        <p class="family">D/o. Smt. Archana Narayan &amp; Sri. N&nbsp;K Narayana Murthy</p>
+        <p class="addr">Next to SK Towers, 133/1, Narayana Pillai Street, Bangalore - 560 001.</p>
+      </div>
+
+      <div class="fig-row">
+        <img class="fig" src="art/fig-left.png" width="137" height="260" alt="" loading="lazy" decoding="async">
+        <img class="clasp" src="art/clasp.png" width="300" height="149" alt="" loading="lazy" decoding="async">
+        <img class="fig" src="art/fig-right.png" width="131" height="260" alt="" loading="lazy" decoding="async">
+      </div>
+
+      <div class="person">
+        <p class="titles">Chi. Ry. Er.</p>
+        <p class="pname">V.S. Srihari</p>
+        <p class="edu">BE Electronics., M.Tech.(VLSI)</p>
+        <p class="family">S/o. Smt. Lakshmi V&nbsp;S &amp; Sri. V&nbsp;Srinatha Babu</p>
+        <p class="addr"># 77, 1st Main, 1st Cross, New Kempegowda Layout, Bangalore - 560 085.</p>
+      </div>
+
+      <p class="on">On Sunday 29th November 2026</p>
+      <p class="venue-name">At Sardar Patel Bhavan</p>
+      <p class="addr">161, Thimmaiah Rd., Opp. Cantonment Railway Station Road, Kaverappa Layout, Vasanth Nagar, Bengaluru, 560001</p>
+
+      <picture><source srcset="art/monogram-sm.webp" type="image/webp"><img class="seal" src="art/monogram-sm.png" width="480" height="480" alt="" loading="lazy" decoding="async"></picture>
+    </div>
+  </div>
+</section>
+
+<section class="moon" id="moon">
+  <div class="stars" id="stars" aria-hidden="true"></div>
+  <div class="wrap wide">
+    <p class="eyebrow reveal">A moonlit moment</p>
+    <h2 class="title reveal">Two hearts, one moon</h2>
+    <div class="moon-grid">
+      <button type="button" class="photo moonshot m1 reveal" data-lb data-full="photos/moon-reflection.jpg" data-alt="Silhouette of the couple against a large glowing moon, one kneeling to kiss the other's hand, with the moon reflected below" aria-label="Open photo full screen">
+        <img src="photos/thumbs/moon-reflection.jpg" width="800" height="1200" loading="lazy" decoding="async" alt="Silhouette of the couple against a large glowing moon, one kneeling to kiss the other's hand, with the moon reflected below">
+      </button>
+      <button type="button" class="photo moonshot m2 reveal" data-lb data-full="photos/moon-silhouette.jpg" data-alt="Silhouette of the couple embracing in front of a large glowing moon, with a purple scarf floating in the air" aria-label="Open photo full screen">
+        <img src="photos/thumbs/moon-silhouette.jpg" width="800" height="1200" loading="lazy" decoding="async" alt="Silhouette of the couple embracing in front of a large glowing moon, with a purple scarf floating in the air">
+      </button>
+    </div>
+  </div>
+</section>
+
+<section class="functions" id="functions">
+  <div class="wrap">
+    <p class="eyebrow reveal">Programme</p>
+    <h2 class="title reveal">Join us for every moment</h2>
+
+    <p class="day-wrap reveal"><span class="day">28-11-2026, Saturday</span></p>
+    <ol class="steps">
+      <li class="step reveal">
+        <div class="dot"><img src="art/prog-varapooja.png" width="184" height="240" alt="" loading="lazy" decoding="async"></div>
+        <div class="box">
+          <p class="when2">Sat &middot; 28 Nov</p>
+          <h3>Varapooja</h3>
+          <p class="time">3.15 pm to 4.15 pm</p>
+          <a class="cal" target="_blank" rel="noopener" href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Varapooja%20%7C%20Raksha%20%26%20Srihari&dates=20261128T094500Z/20261128T104500Z&location=Sardar%20Patel%20Bhavan%2C%20Thimmaiah%20Road%2C%20Vasanthanagar%2C%20Bangalore">Add to calendar</a>
+        </div>
+      </li>
+      <li class="step reveal">
+        <div class="dot"><img src="art/prog-reception.png" width="230" height="240" alt="" loading="lazy" decoding="async"></div>
+        <div class="box">
+          <p class="when2">Sat &middot; 28 Nov</p>
+          <h3>Reception</h3>
+          <p class="time">7.00 pm onwards</p>
+          <a class="cal" target="_blank" rel="noopener" href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Reception%20%7C%20Raksha%20%26%20Srihari&dates=20261128T133000Z/20261128T163000Z&location=Sardar%20Patel%20Bhavan%2C%20Thimmaiah%20Road%2C%20Vasanthanagar%2C%20Bangalore">Add to calendar</a>
+        </div>
+      </li>
+    </ol>
+
+    <p class="day-wrap reveal"><span class="day">29-11-2026, Sunday</span></p>
+    <ol class="steps">
+      <li class="step reveal">
+        <div class="dot"><img src="art/prog-upanayanam.png" width="208" height="240" alt="" loading="lazy" decoding="async"></div>
+        <div class="box">
+          <p class="when2">Sun &middot; 29 Nov</p>
+          <h3>Upanayanam</h3>
+          <p class="time">5.00 am to 6.00 am</p>
+          <a class="cal" target="_blank" rel="noopener" href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Upanayanam%20%7C%20Raksha%20%26%20Srihari&dates=20261128T233000Z/20261129T003000Z&location=Sardar%20Patel%20Bhavan%2C%20Thimmaiah%20Road%2C%20Vasanthanagar%2C%20Bangalore">Add to calendar</a>
+        </div>
+      </li>
+      <li class="step reveal">
+        <div class="dot"><img src="art/prog-muhurtham.png" width="240" height="226" alt="" loading="lazy" decoding="async"></div>
+        <div class="box">
+          <p class="when2">Sun &middot; 29 Nov</p>
+          <h3>Muhurtham</h3>
+          <p class="time">7.55 am to 8.55 am</p>
+          <p class="sub">Dhanur Lagna</p>
+          <a class="cal" target="_blank" rel="noopener" href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Muhurtham%20%7C%20Raksha%20%26%20Srihari&dates=20261129T022500Z/20261129T032500Z&location=Sardar%20Patel%20Bhavan%2C%20Thimmaiah%20Road%2C%20Vasanthanagar%2C%20Bangalore">Add to calendar</a>
+        </div>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<section id="moments">
+  <div class="wrap wide">
+    <p class="eyebrow reveal">Gallery</p>
+    <h2 class="title reveal">Moments together</h2>
+    <div class="rail reveal">
+      <button type="button" class="photo" data-lb data-full="photos/leaves.jpg" data-alt="The couple smiling with their eyes closed in front of deep red leaves" aria-label="Open photo full screen">
+        <img src="photos/thumbs/leaves.jpg" width="800" height="1200" loading="lazy" decoding="async" alt="The couple smiling with their eyes closed in front of deep red leaves">
+      </button>
+      <button type="button" class="photo" data-lb data-full="photos/garden.jpg" data-alt="The couple smiling and holding hands in a green garden, her head resting against his shoulder" aria-label="Open photo full screen">
+        <img src="photos/thumbs/garden.jpg" width="800" height="1200" loading="lazy" decoding="async" alt="The couple smiling and holding hands in a green garden, her head resting against his shoulder">
+      </button>
+      <button type="button" class="photo" data-lb data-full="photos/scooter.jpg" data-alt="The couple in matching brown leaf-print shirts leaning on a vintage green scooter" aria-label="Open photo full screen">
+        <img src="photos/thumbs/scooter.jpg" width="800" height="1200" loading="lazy" decoding="async" alt="The couple in matching brown leaf-print shirts leaning on a vintage green scooter">
+      </button>
+      <button type="button" class="photo" data-lb data-full="photos/closeup.jpg" data-alt="Close-up of her resting her head on his chest, with henna on her hands and a blue bangle" aria-label="Open photo full screen">
+        <img src="photos/thumbs/closeup.jpg" width="800" height="1200" loading="lazy" decoding="async" alt="Close-up of her resting her head on his chest, with henna on her hands and a blue bangle">
+      </button>
+    </div>
+    <p class="swipe-hint">Swipe to see more &middot; tap a photo to view it full screen</p>
+  </div>
+</section>
+
+<section id="venue" style="padding-top:30px">
+  <div class="wrap">
+    <p class="eyebrow reveal">Venue</p>
+    <h2 class="title reveal">Find us here</h2>
+    <div class="venue-card reveal">
+      <p class="venue-name">Sardar Patel Bhavan</p>
+      <p class="addr">161, Thimmaiah Rd., Opp. Cantonment Railway Station Road, Kaverappa Layout, Vasanth Nagar, Bengaluru, 560001</p>
+      <a class="btn" target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&destination=Sardar+Patel+Bhavan+Thimmaiah+Road+Vasanthanagar+Bangalore">Get directions</a>
+    </div>
+    <iframe class="map reveal" title="Map showing Sardar Patel Bhavan, Vasanthanagar, Bangalore" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+      src="https://maps.google.com/maps?q=Sardar%20Patel%20Bhavan%20Thimmaiah%20Road%20Vasanthanagar%20Bangalore&output=embed"></iframe>
+  </div>
+</section>
+
+<section class="from-sec">
+  <div class="wrap">
+    <p class="eyebrow reveal">From the family</p>
+    <h2 class="title reveal">With love, from our family</h2>
+    <button type="button" class="photo family-photo reveal" data-lb data-full="photos/family.jpg" data-alt="Five family members smiling together for a group photo, two of them wearing flower garlands" aria-label="Open photo full screen">
+      <img src="photos/thumbs/family.jpg" width="800" height="533" loading="lazy" decoding="async" alt="Five family members smiling together for a group photo, two of them wearing flower garlands">
+    </button>
+    <div class="from-card reveal">
+      <p class="from-label">From :</p>
+      <p class="from-names">Smt. Archana Narayan &amp; Sri. N&nbsp;K Narayana Murthy</p>
+      <p class="addr">Next to SK Towers, 133/1, Narayana Pillai Street, Bangalore - 560 001.</p>
+      <p class="addr">Mob : 98453 20771</p>
+      <a class="btn" href="tel:+919845320771">Call us</a>
+    </div>
+    <div class="compl reveal">
+      <p class="from-label">With Best Compliments from :</p>
+      <p class="from-names">Swathi N</p>
+      <p class="addr">Relatives &amp; Friends</p>
+    </div>
+  </div>
+</section>
+
+<section class="share">
+  <div class="wrap reveal">
+    <p>Know someone who should be here? Share this invitation with them.</p>
+    <a class="btn" id="share" href="#">Share on WhatsApp</a>
+  </div>
+</section>
+
+<footer>
+  <div class="foot-badge"><picture><source srcset="art/monogram-sm.webp" type="image/webp"><img src="art/monogram-sm.png" width="480" height="480" alt="" loading="lazy" decoding="async"></picture></div>
+  <p class="names-f">Raksha &amp; Srihari</p>
+  <small>29th November 2026 &middot; Bangalore</small>
+</footer>
+
+<div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="Photo viewer" hidden>
+  <div class="lb-stage"><img id="lb-img" alt=""></div>
+  <button type="button" class="lb-close" id="lb-close" aria-label="Close photo">&times;</button>
+  <button type="button" class="lb-prev" id="lb-prev" aria-label="Previous photo">&#8249;</button>
+  <button type="button" class="lb-next" id="lb-next" aria-label="Next photo">&#8250;</button>
+  <p class="lb-count" id="lb-count" aria-live="polite"></p>
+</div>
+
+<audio id="bgm" src="music.mp3" loop preload="none"></audio>
+<button class="music" id="music" type="button" aria-label="Play music" aria-pressed="false" hidden>
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+    <path d="M9 18V6l10-2v12"/><circle cx="6.5" cy="18" r="2.5"/><circle cx="16.5" cy="16" r="2.5"/>
+    <path class="slash" d="M3 3l18 18"/>
+  </svg>
+</button>
+
+<script>
+  const el = id => document.getElementById(id);
+  const reduce = matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+  // Countdown to the Muhurtham: Sunday, 29 Nov 2026, 7:55 AM IST
+  const target = new Date("2026-11-29T07:55:00+05:30");
+  function tick() {
+    const diff = Math.max(0, target - new Date());
+    el("d").textContent = Math.floor(diff / 864e5);
+    el("h").textContent = String(Math.floor(diff / 36e5) % 24).padStart(2, "0");
+    el("m").textContent = String(Math.floor(diff / 6e4) % 60).padStart(2, "0");
+    el("s").textContent = String(Math.floor(diff / 1e3) % 60).padStart(2, "0");
+  }
+  tick(); setInterval(tick, 1000);
+
+  // Falling marigold petals + twinkling stars
+  if (!reduce) {
+    const box = el("petals"), colors = ["#f28c1e", "#f6b83d", "#ffd36b", "#e8574a"];
+    for (let i = 0; i < 14; i++) {
+      const p = document.createElement("span"), s = 8 + Math.random() * 12;
+      p.style.cssText = `left:${Math.random()*100}%;width:${s}px;height:${s}px;background:${colors[i%4]};animation-duration:${9+Math.random()*9}s;animation-delay:${1.5+Math.random()*10}s`;
+      box.appendChild(p);
+    }
+  }
+  const sky = el("stars");
+  for (let i = 0; i < 46; i++) {
+    const st = document.createElement("i"), z = 1 + Math.random() * 2;
+    st.style.cssText = `left:${Math.random()*100}%;top:${Math.random()*100}%;width:${z}px;height:${z}px;animation-delay:${Math.random()*4}s;animation-duration:${2.5+Math.random()*3}s`;
+    sky.appendChild(st);
+  }
+
+  // Reveal on scroll
+  const items = document.querySelectorAll(".reveal");
+  if ("IntersectionObserver" in window) {
+    const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target); } }), { threshold: .12 });
+    items.forEach(i => io.observe(i));
+  } else { items.forEach(i => i.classList.add("in")); }
+
+  // Tap to open + background music (uses music.mp3 next to index.html)
+  const root = document.documentElement, audio = el("bgm"), mbtn = el("music");
+  let musicOn = false, resumeAfterHide = false;
+  function setUI(on) {
+    musicOn = on;
+    mbtn.classList.toggle("on", on);
+    mbtn.setAttribute("aria-pressed", String(on));
+    mbtn.setAttribute("aria-label", on ? "Pause music" : "Play music");
+  }
+  function fadeIn() {
+    let v = 0; audio.volume = 0;
+    const t = setInterval(() => { v = Math.min(0.5, v + 0.025); audio.volume = v; if (v >= 0.5) clearInterval(t); }, 100);
+  }
+  function startMusic() { audio.play().then(() => { fadeIn(); setUI(true); }).catch(() => setUI(false)); }
+  function pauseMusic() { audio.pause(); setUI(false); }
+  audio.addEventListener("loadedmetadata", () => { mbtn.hidden = false; });
+  audio.addEventListener("error", () => { mbtn.hidden = true; });
+  el("open").addEventListener("click", () => { root.classList.add("opened"); startMusic(); });
+  if (reduce) root.classList.add("opened");
+  mbtn.addEventListener("click", () => { if (audio.paused) startMusic(); else pauseMusic(); });
+  document.addEventListener("visibilitychange", () => {
+    if (document.hidden) { resumeAfterHide = musicOn; if (musicOn) pauseMusic(); }
+    else if (resumeAfterHide) { startMusic(); resumeAfterHide = false; }
+  });
+
+  // Full-screen photo viewer (opens the original-quality photo)
+  const lb = el("lb"), lbImg = el("lb-img"), shots = [...document.querySelectorAll("[data-lb]")];
+  let idx = 0, lastFocus = null;
+  function show(i) {
+    idx = (i + shots.length) % shots.length;
+    const b = shots[idx];
+    lbImg.src = b.dataset.full || b.querySelector("img").src;
+    lbImg.alt = b.dataset.alt || "";
+    el("lb-count").textContent = (idx + 1) + " / " + shots.length;
+  }
+  function openLb(i) { lastFocus = document.activeElement; show(i); lb.hidden = false; root.style.overflow = "hidden"; el("lb-close").focus(); }
+  function closeLb() { lb.hidden = true; root.style.overflow = ""; if (lastFocus) lastFocus.focus(); }
+  shots.forEach((b, i) => b.addEventListener("click", () => openLb(i)));
+  el("lb-close").addEventListener("click", closeLb);
+  el("lb-prev").addEventListener("click", () => show(idx - 1));
+  el("lb-next").addEventListener("click", () => show(idx + 1));
+  lb.addEventListener("click", e => { if (e.target === lb || e.target.classList.contains("lb-stage")) closeLb(); });
+  document.addEventListener("keydown", e => {
+    if (lb.hidden) return;
+    if (e.key === "Escape") closeLb();
+    if (e.key === "ArrowLeft") show(idx - 1);
+    if (e.key === "ArrowRight") show(idx + 1);
+  });
+  let sx = null;
+  lb.addEventListener("touchstart", e => { sx = e.touches[0].clientX; }, { passive: true });
+  lb.addEventListener("touchend", e => {
+    if (sx === null) return;
+    const dx = e.changedTouches[0].clientX - sx;
+    if (Math.abs(dx) > 50) show(idx + (dx < 0 ? 1 : -1));
+    sx = null;
+  });
+
+  // Share on WhatsApp
+  el("share").addEventListener("click", function (e) {
+    e.preventDefault();
+    const text = "You are warmly invited to the wedding of Raksha & Srihari on Sunday, 29th November 2026 at Sardar Patel Bhavan, Vasanthanagar, Bangalore. " + location.href;
+    window.open("https://wa.me/?text=" + encodeURIComponent(text), "_blank");
+  });
+</script>
+</body>
+</html>
